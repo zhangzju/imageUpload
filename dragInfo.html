@@ -16,6 +16,19 @@
     <div id="preview">
         <image id="img"></image>
     </div>
+    <script src="js/sea.js"></script>
+    <script type="text/javascript">
+    // seajs 的简单配置
+    seajs.config({
+        base: "../sea-modules/",
+        alias: {
+            "demo": "demo.js"
+        }
+    });
+
+    // 加载入口模块
+    seajs.use("../static/hello/src/main");
+    </script>
 </body>
 
 </html>
